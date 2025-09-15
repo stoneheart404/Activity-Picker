@@ -1,0 +1,195 @@
+/* Reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+
+/* Body layout */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 80px 20px 40px; /* top padding leaves space for navbar */
+    background-color: #1a1a1a;
+    color: #ececec;
+}
+
+/* Top bar */
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #2c2c2c;
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1100;
+}
+
+#topbar h2 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+#topbar button {
+    background: #c75c70;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9em;
+}
+#topbar button:hover { opacity: 0.8; }
+
+/* Controls section buttons & dropdown */
+.controls select,
+.controls button {
+    background-color: #181818; /* deep black */
+    color: #fff;               /* white text */
+    border: 1px solid #333;    /* subtle border */
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+.controls button:hover,
+.controls select:hover {
+    background-color: #2a2a2a; /* slightly lighter on hover */
+}
+
+/* Controls section */
+.controls {
+    max-width: 700px;
+    margin: 20px auto;
+    color: #ececec;
+}
+label, select, button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Result + favorite button */
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Intro + favorites modals share style */
+#introModal, #favoritesModal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#introModal.hidden, #favoritesModal.hidden { display: none; }
+
+#introContent, #favoritesContent {
+    background: rgb(54, 54, 54);
+    color: #f1f1f1;
+    padding: 26px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 520px;
+    width: calc(100% - 40px);
+    font-size: 1.05em;
+    line-height: 1.4;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.486);
+}
+
+/* Buttons inside modal */
+#introContent button, #favoritesContent button {
+    margin-top: 16px;
+    margin-right: 10px;
+    padding: 10px 18px;
+    font-size: 0.95em;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #181818;
+    color: white;
+}
+#introContent button:hover,
+#favoritesContent button:hover { opacity: 0.95; }
+
+/* Favorites list */
+#favoritesList {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+#favoritesList li {
+    margin: 6px 0;
+    padding: 8px;
+    background: #f6f7fb;
+    border-radius: 6px;
+}
+
+/* Heart style */
+.heart {
+    cursor: pointer;
+    font-size: 1.4em;
+    color: #999;
+    margin-left: 10px;
+    transition: color 0.2s ease;
+}
+.heart.active {
+    color: rgb(255, 255, 255);
+}
+.fav-item {
+    margin: 5px 0;
+}
+
+#result {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heart-container {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 200px;
+  margin-left: -100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  font-size: 1em;
+  z-index: 1001;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from { bottom: 0; opacity: 0; }
+  to { bottom: 30px; opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { bottom: 30px; opacity: 1; }
+  to { bottom: 0; opacity: 0; }
+}

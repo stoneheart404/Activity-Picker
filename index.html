@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity Chooser</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top bar -->
+    <header id="topbar">
+        <h2>Activity Chooser</h2>
+        <button id="showFavoritesBtn">❤️ Favorites</button>
+    </header>
+
+    <div id="toast"></div>
+
+
+    <!-- Modal popup for intro -->
+    <div id="introModal">
+        <div id="introContent">
+            <!-- Full welcome message -->
+            <div id="welcomeContent">
+                Welcome! 🎉<br>
+                Select a level below and click the button to get a random activity. <br>
+                Try to complete it and come back for another one!<br>
+                <br>
+                <strong>Level info:</strong><br>
+                level 1: Easy peasy, took less than an hour<br>
+                level 2: A bit challenging, took a few hours or days<br>
+                level 3: For the brave hearts, took weeks or months or possibly longer!<br>
+                <br>
+                Have fun! :3<br>
+                <button id="closeWelcomeBtn">Let's Go!</button>
+            </div>
+
+            <!-- Only level info version -->
+            <div id="levelInfoContent" style="display:none;">
+                <strong>Info:</strong><br><br>
+                level 1: Easy peasy, took less than an hour<br>
+                level 2: A bit challenging, took a few hours or days<br>
+                level 3: For the brave hearts, took weeks or months or possibly longer!<br>
+                <br>
+                Click on "Click here" to get a random activity.<br>
+                <br>
+                Have fun! :3<br>
+                <button id="closeLevelInfoBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal popup for favorites -->
+    <div id="favoritesModal" class="hidden">
+        <div id="favoritesContent">
+            <h3>Your Favorites</h3>
+            <ul id="favoritesList"></ul>
+            <button id="closeFavoritesBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- Main controls -->
+    <div class="controls">
+        <label for="levelSelect">Pick a level:</label>
+        <select id="levelSelect">
+            <option value="">-- Select a level --</option>
+        </select>
+        <br><br>
+        <button id="pickBtn">Click here</button>
+        <button id="showIntroBtn">Instructions</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
