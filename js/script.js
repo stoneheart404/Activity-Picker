@@ -43,7 +43,18 @@ const levels = {
         "Watch a TV show", "Play a video game", "Go outside", "Write a journal", 
         "Learn a new word", "Practice mindfulness", "Organize your desk", "Do 10 push-ups", 
         "Clean your inbox", "Listen to music", "Create a playlist", "Draw something", 
-        "Play chess", "Watch a documentary" 
+        "Play chess", "Watch a documentary", "Do a random act of kindness", "Take a nap",
+        "Read a poem", "Write a letter", "Make a craft", "Do a brain teaser", "Try origami",
+        "Play a board game", "Do some gardening", "Take a photo walk", "Visit a park",
+        "Go for a bike ride", "Try a new coffee shop", "Visit a library", "Do some stretching",
+        "Take a different route", "Try a new fruit", "Make a smoothie", "Do a crossword puzzle",
+        "Listen to a podcast", "Watch a TED talk", "Try a new hairstyle", "Do some journaling",
+        "Make a gratitude list", "Try a new tea", "Do a digital detox", "Practice deep breathing",
+        "Write a short story", "Do a quick workout", "Try a new snack", "Take a different route to work",
+        "Make a new recipe", "Do a quick meditation", "Try a new fruit or vegetable", "Do a 5-minute stretch",
+        "Write down 3 things you're grateful for", "Try a new type of exercise", "Take a different route home",
+        "Make a new playlist", "Do a quick clean-up", "Try a new hobby", "Take a different route to school",
+        "Make a new friend", "Do a quick workout routine", "Try a new type of cuisine", "Take a different route to the store",
     ],
 
     "level 2": ["Learn a new skill", "Start a new hobby", "Volunteer", "Write a short story", 
@@ -55,10 +66,30 @@ const levels = {
         "Take a pottery class", "Go horseback riding", "Learn to surf", "Take a painting class", 
         "Go to a comedy show", "Visit an art gallery", "Take a music lesson", "Try archery", 
         "Go to a theme park", "Take a language class", "Go on a boat ride", "Visit a botanical garden", 
-        "Take a writing workshop"
+        "Take a writing workshop", "Go to a farmers market", "Try a new fitness class", "Visit a historical site",
+        "Take a dance class", "Go to a spa", "Try a new cuisine", "Visit an aquarium", "Take a meditation class",
+        "Go to a book reading", "Try a new craft", "Visit a planetarium", "Take a self-defense class", 
+        "Go to a trivia night", "Try a new workout routine", "Visit a local landmark", "Take a gardening class",
 
     ],
-    "level 3": ["Start a blog", "Build a website", "Learn a new language"
+    "level 3": ["Start a blog", "Build a website", "Learn a new language", "Write a book", 
+        "Run a marathon", "Train for a triathlon", "Climb a mountain", "Travel to a new country", 
+        "Start a business", "Create an app", "Learn to code", "Write a screenplay", "Make a short film", 
+        "Design a game", "Create a podcast", "Write a song", "Produce music", "Choreograph a dance", 
+        "Direct a play", "Paint a mural", "Sculpt something", "Build furniture", "Renovate a room",
+        "Start a YouTube channel", "Create an online course", "Write a research paper", "Invent something", 
+        "Design a fashion line", "Start a charity", "Organize a community event", "Run for office", 
+        "Create a documentary", "Write a grant proposal", "Develop a marketing plan", 
+        "Launch a crowdfunding campaign", "Create a social media strategy", 
+        "Plan a large event", "Lead a team project", "Conduct an experiment", 
+        "Write a business plan", "Create a financial plan", "Design a product", "Plan an event",
+        "Program a robot", "Build a drone", "Create a virtual reality experience", "Design a board game", "Write a comic book",
+        "Create a sculpture", "Build a treehouse", "Design a garden", "Program a Discord bot", "Create a mobile game", "Write a novel",
+        "Develop a software tool", "Create an animation", "Design a website layout", "Build a PC", "Create a digital art piece", "Write a technical manual",
+        "Design a logo", "Create a brand identity", "Plan a marketing campaign", "Develop a fitness program", "Create a meal plan", "Design a workout routine",
+        "Plan a travel itinerary", "Create a budget", "Design a home office", "Build a bookshelf", "Create a photo album", "Design a tattoo", 
+        "Write a memoir", "Create a family tree", "Design a wedding plan", "Plan a surprise party", "Create a scavenger hunt", "Design a treasure map",
+        "Write a fantasy story", "Create a sci-fi world", "Design a superhero", "Build a model airplane", "Create a diorama", "Design a cosplay outfit"
 
     ]
 };
